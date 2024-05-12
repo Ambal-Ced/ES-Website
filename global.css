@@ -1,0 +1,16 @@
+span{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+a{
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+h1{
+    font-size: 3.5rem;
+    letter-spacing: 8px;
+}
+p{
+    font-size: 1.1rem;
+}

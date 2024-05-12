@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+body{
+    color: black;
+    position: relative;
+}
+section{
+    width: 100%;
+    z-index: -1;
+    
+}
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tret{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.rty{
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+section img{
+    height: 300px;
+    width: 600px;
+}
+
+
+.titles h1 {
+    color: black;
+    font-size: 3rem;
+}
+.titles{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+    margin-bottom: -5%;
+}
+
+.envi{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.cont p{
+    color: black;
+}
+.envi h1{
+    color: rgb(46, 46, 46);
+    margin-top: 5%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .menulinks{
+    background-color: #31572c;
+}
+
+
+
+
+
+
+
+

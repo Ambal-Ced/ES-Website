@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+	color: white;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: "Josefin Sans", sans-serif;
+	min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0
+}
+
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	position: sticky;
+}
+
+header .navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-right: 4%;
+	padding-left: 2%;
+	
+}
+
+.navbar .logo{
+	letter-spacing: 5px;
+}
+
+
+.navbar .menulinks {
+	display: flex;
+	gap: 40px;
+	text-decoration: none;
+}
+
+.navbar a {
+	text-decoration: none;
+	transition: 0.2s ease;
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+}
+
+.navbar a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(0, 255, 191);
+	transform-origin: bottom right;
+	transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.navbar ul li::after {
+	content: '';
+	height: 10px;
+	width: 0;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;
+	text-decoration-thickness: 10px;
+}
+
+
+.navbar a:hover {
+	color: rgb(30, 255, 0);
+}
+
+.navbar .logo span:hover {
+	color: rgb(30, 255, 0);
+}
+
+.navbar .menulinks a {
+	letter-spacing: 3px;
+}
+
+.navbar .menulinks {
+	list-style-type: none;
+}
+
+.sectionclass {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.sectionclass .content {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin-right: auto;
+	border-radius: 20px;
+	overflow: auto;
+	
+}
+
+
+
+
+#menu-btn {
+	cursor: pointer;
+	display: none;
+	text-size-adjust: 50px;
+
+}
+
+#close-menu-btn {
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.inf{
+	width: 100%;
+	padding-top: 0.5%;
+	text-align: center;
+}
+.inf p{
+	font-size: 1.3rem;
+}
+.btt{
+	margin-top: 3%;
+	width: 100%;
+}
+.btt a{
+	padding-top: 1.2%;
+	padding-bottom: 0.6%;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: #31572c;
+	border-radius: 10px;
+	font-size: 2rem;
+	border: solid white 1px;
+}
+
+.titlle{
+	text-align: center;
+	margin-top: 1%;
+}
+
+.inf{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+
+.widing{
+	align-items: center;
+    text-align: center;
+	width: 70%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-height:667px) and (max-width:375px) {
+	.titlle{
+		margin-top: -10%;
+	}
+	.sectionclass .inf p{
+		font-size: 1rem;
+	}
+
+}
+@media screen and (max-height:1060px){
+	.navbar .logo{
+		font-size: 1.8rem;
+	}
+}
+@media screen and (max-width: 1170px) {
+	.navbar .menulinks a {
+		
+		letter-spacing: 1px;
+		font-size: 1.7rem;
+
+	}
+	.navbar{
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 1051px) {
+	.navbar .menulinks a{
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.navbar .menulinks a{
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 998px) {
+	.navbar .menulinks{
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 971px) {
+	.logo{
+		font-weight: 400;
+		letter-spacing: normal;
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 953px){
+	.navbar .logo{
+		font-size: 1.6rem;
+	}
+}
+@media screen and (max-width: 927px) {
+
+}
+@media screen and (max-width: 907px) {
+	.navbar .logo{
+		font-size: 1.5rem;
+	}
+	.navbar .menulinks a{
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 433px) {
+	.navbar .logo a{
+		font-size: 0.5rem;
+	}
+}
+@media screen and (max-width: 255px){
+	.titlle h1{
+		font-size: 1.5rem;
+		letter-spacing: normal;
+	}
+}
+
+@media screen and (max-width: 868px) {
+	.navbar .logo{
+		font-size: 1.5rem;
+	}
+	.navbar .menulinks a{
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 847px){
+	.navbar .logo{
+		font-size: 1.4rem;
+	}
+	.navbar .menulinks a{
+		font-size: 1.4rem;
+	}
+}
+
+
+
+
+@media screen and (max-width: 828px) {
+
+	.inf{
+		width:100%;
+		margin-left: 0;
+		font-size: 1.5rem;
+	}
+
+	h1{
+		padding-top: 0;
+	}
+
+	.navbar .logo{
+		font-size: 2rem;
+	}
+	.navbar .menulinks{
+		font-size: 3rem;
+	}
+
+	.sectionclass .content {
+		color: rgb(255, 255, 255);
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 10px;
+		border-radius: 20px;
+		margin-left: 0;
+	}
+
+	header {
+		padding: 25px 20px;
+	}
+
+
+	header.show-mobile-menu::before {
+		content: "";
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(5px);
+	}
+
+	#close-menu-btn,
+	#menu-btn {
+		display: block;
+		font-weight: bolder;
+	}
+
+	#menu-btn {
+		font-size: x-large;
+		font-weight: bolder;
+	}
+
+	.navbar .menulinks {
+		position: fixed;
+		left: -260px;
+		top: 0;
+		width: 260px;
+		height: 120%;
+		background-color: rgba(86, 240, 66, 0.308);
+		flex-direction: column;
+		padding: 70px 40px 0;
+		transition: left 0.2s ease;
+
+	}
+	.navbar .menulinks a{
+		padding-top: 30px;
+	}
+
+	header.show-mobile-menu .navbar .menulinks {
+		left: 0;
+	}
+
+	.titlle h1{
+		letter-spacing: normal;
+	}
+	.sectionclass .content {
+		text-align: center;
+	}
+
+	.sectionclass .content :is(h1, p) {
+		max-width: 100%;
+	}
+
+	.sectionclass .content h1 {
+		font-size: 2.4rem;
+		line-height: 60px;
+	}
+
+	.sectionclass .content button {
+		padding: 9px 18px;
+	}
+
+	.bott p{
+		font-size: 10px;
+		gap: 25%;
+		margin-right: -10%;
+	}
+	.btt a{
+		font-size: 1.5rem;
+	}
+	.widing{
+		font-size: 1.8rem;
+	}
+}
+
+
+.bott {
+	align-items: end;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 90%;
+	gap: 35%;
+	bottom: 0;
+	position: absolute;
+}
+.bott .ptr{
+	margin-left: 4%;
+}
